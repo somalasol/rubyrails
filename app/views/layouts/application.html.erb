@@ -31,7 +31,9 @@
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
-   
+   <% flash.each do |x , y| %>
+                <%= content_tag :div, y, class: "text-center alert alert-#{x}" %>
+                <% end %>
     <%= yield %>
  
   </body>
