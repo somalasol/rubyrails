@@ -12,3 +12,4 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'https://mighty-lake-95047.herokuapp.com/',
   :authentication => :plain,
 }
+ActionMailer::Base.delivery_method = :smtp
