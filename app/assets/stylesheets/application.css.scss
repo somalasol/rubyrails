@@ -16,6 +16,8 @@
 
 @import 'bootstrap';
 @import 'bootstrap-sprockets';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 * {
     font-family: 'Open Sans', sans-serif;
@@ -36,4 +38,27 @@
     margin-top: -20px;
     padding-top: 75px;
     padding-bottom: 75px;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a  {
+    color:white;
+    &:hover {
+        color:white;
+        opacity: 0.5;
+            }
+
+}
+
+.callout-icon {
+    font-size: 100px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+    &:hover, &:focus{
+        background-color: #093637;
+    }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
 }
