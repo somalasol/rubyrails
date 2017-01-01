@@ -7,10 +7,10 @@ class ContactsController < ApplicationController
    def create
       @contact = Contact.new(contact_params)
        if @contact.save
-        fname = params [:contact][:fname]
-        lname = params [:contact][:lname]
-        email = params [:contact][:email]
-        body = params [:contact][:comments]
+        fname = params[:contact][:fname]
+        lname = params[:contact][:lname]
+        email = params[:contact][:email]
+        body = params[:contact][:comments]
         
         ContactMailer.contact_email(fname , lname , email , body).deliver
          flash[:success] = 'Message sent'
