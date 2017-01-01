@@ -1,0 +1,21 @@
+<div class = "container">
+    <h2 class = 'text-center'>Contact Us</h2>
+    
+    <%= form_for "/contacts" do |f| %>
+        <%= f.label :'First Name' %>
+        <%= f.text_field :fname %>
+        
+        <%= f.label :'Last Name' %>
+        <%= f.text_field :lname %>
+        
+        <%= f.label :'email Address' %>
+        <%= f.text_field :email %>
+        
+        <%= f.label :'Any comments?' %>
+        <%= f.text_area :comments %>
+        
+        <%= f.submit 'Go!' %>
+    <% end %>
+    
+    
+</div>
