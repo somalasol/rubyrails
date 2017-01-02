@@ -3,3 +3,30 @@
     <h1>Welcome to GamOpt</h1>
     <h3>A practice site that will one day be real.</h3>
 </div>
+
+<div class = "container home-sign-up">
+    <div class = "row">
+        <div class = "col-md-6">
+            <div class ="well text-center">
+           <h1>Want to eat?</h1>
+           <br/>
+           <br/>
+           <h3>Sign up here for a customer account, and get access to hundreds of freshly prepared homemade meals!</h3>
+           <br/>
+           <%= link_to "I wanna eat!" , new_user_registration_path(plan: 'eat') , class: "btn btn-primary btn-lg btn-block" %>
+           </div>
+        </div>
+        
+         <div class = "col-md-6">
+          <div class ="well text-center">
+           <h1>Want to cook?</h1>
+           <br/>
+           <br/>
+           <h3> Sign up here to apply for a chef account, and start preparing food for others to enjoy! </h3>
+           <br/>
+           <br/>
+           <%= link_to "I wanna cook!" , new_user_registration_path(plan: @cook) , class: "btn btn-success btn-lg btn-block" %>
+          </div> 
+        </div>
+    </div>
+</div>
