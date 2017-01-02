@@ -62,3 +62,19 @@
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
+
+.nav-btns {
+    background-color: #093637;
+    background-repeat:no-repeat;
+    border: 20px;
+    border-color: white;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: white;
+    
+    &:hover {
+        opacity: 0.75;
+        color: white;
+    }
+}
